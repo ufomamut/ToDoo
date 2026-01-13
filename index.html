@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ToDooo - A basic version todo application written in vanilla JavaScript.">
+    <meta name="author" content="Michal Socha - Ufomamut">
+    
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style/styles.css">
+    
+    <title>ToDooo</title>
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- APP HEADER -->
+        <header>
+            <h1>ToDooo</h1>
+        </header>
+
+        <!-- STATUS & FILTER BAR -->
+        <section class="status-bar">
+
+            <div id="counters">
+                <span id="count-total">Celkem: 0</span>
+                <span id="count-active">Aktivní: 0</span>
+                <span id="count-done">Hotové: 0</span>
+            </div>
+
+            <div class="filters">
+
+                <div class="filter-buttons">
+                    <button id="filter-all">Vše</button>
+                    <button id="filter-active">Aktivní</button>
+                    <button id="filter-done">Hotové</button>
+                </div>
+
+                <select id="filter-category">
+                    <option value="all">Všechny kategorie</option>
+                </select>
+
+            </div>
+
+        </section>
+
+        <!-- ADD TODO FORM -->
+        <form id="adding-form">
+            <input
+                id="todo-input"
+                placeholder="Napiš úkol…"
+                autocomplete="off"
+            />
+
+            <select id="todo-category"></select>
+            <select id="todo-priority"></select>
+
+            <button type="submit">Přidat</button>
+        </form>
+
+        <!-- TODO LIST -->
+        <ul id="todo-list"></ul>
+
+        <!-- FOOTER -->
+        <footer class="app-footer">
+            <small>
+                Todooo Manager · v1.0 · © 2025 Ufomamut
+            </small>
+        </footer>
+
+    </main>
+    
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
