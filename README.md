@@ -3,7 +3,7 @@
 A small todo application written in **vanilla JavaScript**.  
 This project was created **primarily as a learning exercise**, focused on understanding functional programming basics, closures, and simple state management without frameworks.
 
-[🇨🇿 verze níže](#česky)
+[🇨🇿 verze dole](#česky)
 
 ---
 
